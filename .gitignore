@@ -1,2 +1,4 @@
-*.mp4
 node_modules/
+motion/reels/**/*.mp4
+*.mp4
+.DS_Store

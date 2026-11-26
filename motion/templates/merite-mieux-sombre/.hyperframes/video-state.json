@@ -1,0 +1,118 @@
+{
+  "version": 1,
+  "historyId": "3a7202ba-0825-442a-b10e-ca1026e3c421",
+  "currentRevision": null,
+  "pendingChanges": false,
+  "files": {
+    "assets/canva-1.webp": {
+      "hash": "981b93109893578c2351f0c54dc8eb768cede7e6489cc0ee3f97a0a0bac03e52",
+      "content": "/root/.cache/hyperframes/history/3a7202ba-0825-442a-b10e-ca1026e3c421/blobs/98/981b93109893578c2351f0c54dc8eb768cede7e6489cc0ee3f97a0a0bac03e52"
+    },
+    "assets/canva-3.webp": {
+      "hash": "e77d3623c35f4bfbecd05588082ad9a890356601624284c6384d3a9381bbf5c2",
+      "content": "/root/.cache/hyperframes/history/3a7202ba-0825-442a-b10e-ca1026e3c421/blobs/e7/e77d3623c35f4bfbecd05588082ad9a890356601624284c6384d3a9381bbf5c2"
+    },
+    "assets/canva-4.webp": {
+      "hash": "41170b465cb7a6da6ffaa747daedbc5e2c0d03ba3c85c9e2b66cb61264bdcad5",
+      "content": "/root/.cache/hyperframes/history/3a7202ba-0825-442a-b10e-ca1026e3c421/blobs/41/41170b465cb7a6da6ffaa747daedbc5e2c0d03ba3c85c9e2b66cb61264bdcad5"
+    },
+    "assets/gsap.min.js": {
+      "hash": "c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280",
+      "content": "/root/.cache/hyperframes/history/3a7202ba-0825-442a-b10e-ca1026e3c421/blobs/c1/c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280"
+    },
+    "assets/jaisle-calendrier.webp": {
+      "hash": "09d3fa54bc1c35fbd886bfd728005b20ab20f5a7beb0ab5d4490e4950140466b",
+      "content": "/root/.cache/hyperframes/history/3a7202ba-0825-442a-b10e-ca1026e3c421/blobs/09/09d3fa54bc1c35fbd886bfd728005b20ab20f5a7beb0ab5d4490e4950140466b"
+    },
+    "assets/jaisle-maillot-exterieur.webp": {
+      "hash": "3e7df18cf6822a593ecefd1b0b89b430b48db18a676e37ea8e24c8a9aa0564c1",
+      "content": "/root/.cache/hyperframes/history/3a7202ba-0825-442a-b10e-ca1026e3c421/blobs/3e/3e7df18cf6822a593ecefd1b0b89b430b48db18a676e37ea8e24c8a9aa0564c1"
+    },
+    "assets/jaisle-match.webp": {
+      "hash": "b5b08949cc942260d4ecdda34034ac40da9cd869c087e7b621df967c5011a9b9",
+      "content": "/root/.cache/hyperframes/history/3a7202ba-0825-442a-b10e-ca1026e3c421/blobs/b5/b5b08949cc942260d4ecdda34034ac40da9cd869c087e7b621df967c5011a9b9"
+    },
+    "assets/jersey.jpg": {
+      "hash": "ca78d5f0b7872e387dacaa0224ec04f9bb0b66ae622161d3fe2501e7a954d868",
+      "content": "/root/.cache/hyperframes/history/3a7202ba-0825-442a-b10e-ca1026e3c421/blobs/ca/ca78d5f0b7872e387dacaa0224ec04f9bb0b66ae622161d3fe2501e7a954d868"
+    },
+    "assets/logo-blanc.png": {
+      "hash": "ad4b49b425b3e2223a8b8a5b7361572d20da9606a13ca3a900d1106ad8b0c639",
+      "content": "/root/.cache/hyperframes/history/3a7202ba-0825-442a-b10e-ca1026e3c421/blobs/ad/ad4b49b425b3e2223a8b8a5b7361572d20da9606a13ca3a900d1106ad8b0c639"
+    },
+    "assets/montserrat-latin-600-normal.woff2": {
+      "hash": "d857325c360f7128b347ca924c1974967aaa886ba47dad22e4042d6c38b26a83",
+      "content": "/root/.cache/hyperframes/history/3a7202ba-0825-442a-b10e-ca1026e3c421/blobs/d8/d857325c360f7128b347ca924c1974967aaa886ba47dad22e4042d6c38b26a83"
+    },
+    "assets/montserrat-latin-700-normal.woff2": {
+      "hash": "f9d9e65b15372cebcafc3acd1e664a564c5c4b23278de4d5760de9a13c530371",
+      "content": "/root/.cache/hyperframes/history/3a7202ba-0825-442a-b10e-ca1026e3c421/blobs/f9/f9d9e65b15372cebcafc3acd1e664a564c5c4b23278de4d5760de9a13c530371"
+    },
+    "assets/montserrat-latin-800-normal.woff2": {
+      "hash": "ba826fb84c2e961578adf3a08b5778b87905d4443445d1d56d84f9f157d5ea4b",
+      "content": "/root/.cache/hyperframes/history/3a7202ba-0825-442a-b10e-ca1026e3c421/blobs/ba/ba826fb84c2e961578adf3a08b5778b87905d4443445d1d56d84f9f157d5ea4b"
+    },
+    "assets/montserrat-latin-900-normal.woff2": {
+      "hash": "5b6958520638bb8609f9eacb17c4d189563efeae96d5da49f7c2043988697205",
+      "content": "/root/.cache/hyperframes/history/3a7202ba-0825-442a-b10e-ca1026e3c421/blobs/5b/5b6958520638bb8609f9eacb17c4d189563efeae96d5da49f7c2043988697205"
+    },
+    "assets/noise.png": {
+      "hash": "5f5f8cc329933b6a75a5b0c022b8bd4d3a303c9d89b2cc7fba6c0d56440faaea",
+      "content": "/root/.cache/hyperframes/history/3a7202ba-0825-442a-b10e-ca1026e3c421/blobs/5f/5f5f8cc329933b6a75a5b0c022b8bd4d3a303c9d89b2cc7fba6c0d56440faaea"
+    },
+    "assets/patch.jpg": {
+      "hash": "f88261d729a64b9928a29c7d9736c89ab44cdb741edec01d75b6958ecade5400",
+      "content": "/root/.cache/hyperframes/history/3a7202ba-0825-442a-b10e-ca1026e3c421/blobs/f8/f88261d729a64b9928a29c7d9736c89ab44cdb741edec01d75b6958ecade5400"
+    },
+    "assets/poster.jpg": {
+      "hash": "5977b565ba39e977317c04f990b039cb7e08ebc534377c1f9350557d6d1c6bf4",
+      "content": "/root/.cache/hyperframes/history/3a7202ba-0825-442a-b10e-ca1026e3c421/blobs/59/5977b565ba39e977317c04f990b039cb7e08ebc534377c1f9350557d6d1c6bf4"
+    },
+    "assets/stetienne-partenaire.webp": {
+      "hash": "fe3fe520e3f7d17711d02909d810e1b80294438b3452f5d3dabbde6fd57624b5",
+      "content": "/root/.cache/hyperframes/history/3a7202ba-0825-442a-b10e-ca1026e3c421/blobs/fe/fe3fe520e3f7d17711d02909d810e1b80294438b3452f5d3dabbde6fd57624b5"
+    },
+    "assets/stetienne-victoire.webp": {
+      "hash": "c6f4c56223cbadbb578b710a640222e19594f68231ed944084a504104db50210",
+      "content": "/root/.cache/hyperframes/history/3a7202ba-0825-442a-b10e-ca1026e3c421/blobs/c6/c6f4c56223cbadbb578b710a640222e19594f68231ed944084a504104db50210"
+    },
+    "assets/stgilles-1.webp": {
+      "hash": "bed4bc8fb4b3d71dcb3557ae09d74bf4245f65f3568cfef921ea80478ab36338",
+      "content": "/root/.cache/hyperframes/history/3a7202ba-0825-442a-b10e-ca1026e3c421/blobs/be/bed4bc8fb4b3d71dcb3557ae09d74bf4245f65f3568cfef921ea80478ab36338"
+    },
+    "assets/stgilles-2.webp": {
+      "hash": "223cef748131b9acfc8512c1f59f108e80fed09411dbc93b20aef22a4cabdc30",
+      "content": "/root/.cache/hyperframes/history/3a7202ba-0825-442a-b10e-ca1026e3c421/blobs/22/223cef748131b9acfc8512c1f59f108e80fed09411dbc93b20aef22a4cabdc30"
+    },
+    "assets/stgilles-5.webp": {
+      "hash": "053a9cb21530645f763159def95fdd369377b3c8992d00f1f7e2876c75e28db2",
+      "content": "/root/.cache/hyperframes/history/3a7202ba-0825-442a-b10e-ca1026e3c421/blobs/05/053a9cb21530645f763159def95fdd369377b3c8992d00f1f7e2876c75e28db2"
+    },
+    "index.html": {
+      "hash": "dc30c62bba49d539b8e0967694a129ac244d4b3af3ab5b38605d85cc18580bcb",
+      "content": "/root/.cache/hyperframes/history/3a7202ba-0825-442a-b10e-ca1026e3c421/blobs/dc/dc30c62bba49d539b8e0967694a129ac244d4b3af3ab5b38605d85cc18580bcb"
+    }
+  },
+  "revisions": {},
+  "checks": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  },
+  "snapshots": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  },
+  "renders": {
+    "latest": {
+      "id": "2fe40d16-50eb-45fd-8f86-9b6cd79820e1",
+      "completedAt": 1794503855707,
+      "output": "/tmp/claude-0/-home-user-KUBLIK/1590d3fb-1f72-5161-8092-e3190cf207cf/scratchpad/hfrun/r3.mp4",
+      "status": "completed",
+      "revision": null
+    },
+    "retainedRevisions": []
+  },
+  "pendingArtifactCleanup": []
+}

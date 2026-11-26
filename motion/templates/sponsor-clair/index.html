@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1080, height=1920">
+<title>Klubik - Pour convaincre un sponsor</title>
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face{font-family:M;font-weight:600;src:url(assets/montserrat-latin-600-normal.woff2) format("woff2")}
+@font-face{font-family:M;font-weight:700;src:url(assets/montserrat-latin-700-normal.woff2) format("woff2")}
+@font-face{font-family:M;font-weight:800;src:url(assets/montserrat-latin-800-normal.woff2) format("woff2")}
+@font-face{font-family:M;font-weight:900;src:url(assets/montserrat-latin-900-normal.woff2) format("woff2")}
+@font-face{font-family:P;font-weight:700;font-style:italic;src:url(assets/playfair-display-latin-700-italic.woff2) format("woff2")}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#F2F4F9}
+#root{position:relative;width:1080px;height:1920px;overflow:hidden;background:#F2F4F9;font-family:M,sans-serif;color:#081236}
+.bg{position:absolute;inset:0;background:radial-gradient(1200px 900px at 50% 62%,#ffffff 0%,#F2F4F9 55%,#E8ECF6 100%)}
+.grain{position:absolute;inset:0;background-image:radial-gradient(rgba(8,18,54,.05) 1px,transparent 1px);background-size:22px 22px;opacity:.55}
+.scene{position:absolute;inset:0;overflow:hidden}
+.head{position:absolute;left:0;right:0;top:300px;text-align:center}
+.line{display:block;overflow:hidden;padding:0 20px;line-height:.98}
+.line>span{display:inline-block;font-weight:900;text-transform:uppercase;letter-spacing:-.035em;font-size:128px}
+.blue{color:#1353F4}
+.sm>span{font-size:100px}
+.card{position:absolute;border-radius:30px;overflow:hidden;background:#fff;box-shadow:0 50px 90px -30px rgba(8,18,54,.38),0 12px 30px rgba(8,18,54,.10)}
+.card img{display:block;width:100%;height:100%;object-fit:cover}
+.pill{position:absolute;display:flex;align-items:center;gap:16px;background:#fff;border-radius:999px;padding:18px 36px 18px 18px;box-shadow:0 18px 40px -12px rgba(8,18,54,.25);font-weight:800;font-size:36px;letter-spacing:.02em;text-transform:uppercase;white-space:nowrap}
+.chk{width:54px;height:54px;border-radius:50%;background:#1353F4;display:grid;place-items:center;flex:none}
+.chk svg{width:30px;height:30px}
+.num{font-weight:900;color:#1353F4;letter-spacing:-.06em;line-height:.8}
+.lbl{font-weight:900;text-transform:uppercase;letter-spacing:-.03em}
+.flash{position:absolute;inset:0;background:#fff;opacity:0}
+.f,.c{opacity:0}
+.blueplate{position:absolute;inset:0;background:#1353F4}
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="24.6" data-width="1080" data-height="1920" data-fps="30">
+  <div id="bg" class="bg clip" data-start="0" data-duration="21.8" data-track-index="0"></div>
+  <div id="grain" class="grain clip" data-start="0" data-duration="21.8" data-track-index="1"></div>
+  <img id="glass" class="clip" src="assets/bg.jpg" data-start="0" data-duration="21.8" data-track-index="11" style="position:absolute;inset:0;width:1080px;height:1920px;object-fit:cover;opacity:.55" alt="">
+
+  <!-- S1 hook -->
+  <div id="s1" class="scene clip" data-start="0" data-duration="3.3" data-track-index="2">
+    <div class="head">
+      <div class="line"><span>Pour convaincre</span></div>
+      <div class="line"><span>un sponsor,</span></div>
+      <div class="line"><span>il faut une</span></div>
+      <div class="line"><span class="blue">vraie image.</span></div>
+    </div>
+    <div id="s1card" class="card" style="left:290px;top:960px;width:500px;height:625px"></div>
+  </div>
+
+  <!-- S2 -->
+  <div id="s2" class="scene clip" data-start="3.3" data-duration="2.1" data-track-index="3">
+    <div class="head">
+      <div class="line"><span>On crée l'image</span></div>
+      <div class="line"><span class="blue">de ton club.</span></div>
+    </div>
+    <div id="s2wrap" style="position:absolute;left:290px;top:960px;width:500px;height:625px;perspective:1600px">
+      <div id="s2flip" style="position:absolute;inset:0;transform-style:preserve-3d">
+        <div class="card" style="inset:0;backface-visibility:hidden"></div>
+        <div class="card" style="inset:0;backface-visibility:hidden;transform:rotateY(180deg)"><img src="assets/patch.jpg" alt=""></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- S3 maillots -->
+  <div id="s3" class="scene clip" data-start="5.4" data-duration="3.2" data-track-index="4">
+    <div style="position:absolute;left:0;right:0;top:230px;display:flex;justify-content:center;align-items:flex-end;gap:26px">
+      <div id="s3num" class="num" style="font-size:300px">1</div>
+      <div style="padding-bottom:22px">
+        <div class="line"><span class="lbl" style="font-size:96px;letter-spacing:-.03em">maillots</span></div>
+        <div class="line"><span class="lbl" style="font-size:60px">sur-mesure</span></div>
+      </div>
+    </div>
+    <div id="s3pill" class="pill" style="left:50%;top:660px;transform:translateX(-50%)"><div class="chk"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.2 4.2L19 7" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Aux couleurs de ton club</div>
+    <div id="s3a" class="card" style="left:240px;top:800px;width:600px;height:796px"><img src="assets/jersey.jpg" alt=""></div>
+    <div id="s3b" class="card" style="left:40px;top:860px;width:1000px;height:715px"><img src="assets/jaisle-maillot-exterieur.webp" alt=""></div>
+  </div>
+
+  <!-- S4 visuels de la saison -->
+  <div id="s4" class="scene clip" data-start="8.6" data-duration="4.0" data-track-index="5">
+    <div class="head" style="top:220px">
+      <div class="line sm"><span>Tous tes visuels</span></div>
+      <div class="line sm"><span class="blue">de la saison.</span></div>
+    </div>
+    <div id="chips" style="position:absolute;left:40px;right:40px;top:500px;height:320px">
+      <div class="pill c" style="left:0;top:0">Jour de match</div>
+      <div class="pill c" style="left:440px;top:0">Match</div>
+      <div class="pill c" style="left:705px;top:0">Score</div>
+      <div class="pill c" style="left:40px;top:108px">Partenaires</div>
+      <div class="pill c" style="left:470px;top:108px">Bienvenue</div>
+      <div class="pill c" style="left:260px;top:216px">Calendrier</div>
+    </div>
+    <div style="position:absolute;left:210px;top:860px;width:660px;height:825px;perspective:1800px">
+      <div class="card f" style="inset:0"><img src="assets/poster.jpg" alt=""></div>
+      <div class="card f" style="inset:0"><img src="assets/jaisle-match.webp" alt=""></div>
+      <div class="card f" style="inset:0"><img src="assets/stetienne-victoire.webp" alt=""></div>
+      <div class="card f" style="inset:0"><img src="assets/stetienne-partenaire.webp" alt=""></div>
+      <div class="card f" style="inset:0"><img src="assets/canva-3.webp" alt=""></div>
+      <div class="card f" style="inset:0"><img src="assets/jaisle-calendrier.webp" alt=""></div>
+    </div>
+  </div>
+
+  <!-- S5 templates -->
+  <div id="s5" class="scene clip" data-start="12.6" data-duration="3.0" data-track-index="6">
+    <div style="position:absolute;left:0;right:0;top:220px;display:flex;justify-content:center;align-items:flex-end;gap:26px">
+      <div id="s5num" class="num" style="font-size:300px">0</div>
+      <div style="padding-bottom:22px">
+        <div class="line"><span class="lbl" style="font-size:96px">templates</span></div>
+        <div class="line"><span class="lbl" style="font-size:60px">modifiables</span></div>
+      </div>
+    </div>
+    <div id="s5p1" class="pill" style="left:50%;top:620px;transform:translateX(-50%)"><div class="chk"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.2 4.2L19 7" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Sur Canva, en 2 minutes</div>
+    <div id="s5p2" class="pill" style="left:50%;top:740px;transform:translateX(-50%)"><div class="chk"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.2 4.2L19 7" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>+ calendrier sur 3 mois</div>
+    <div style="position:absolute;left:310px;top:1000px;width:460px;height:575px">
+      <div class="card t" style="inset:0"><img src="assets/canva-2.webp" alt=""></div>
+      <div class="card t" style="inset:0"><img src="assets/canva-4.webp" alt=""></div>
+      <div class="card t" style="inset:0"><img src="assets/canva-5.webp" alt=""></div>
+      <div class="card t" style="inset:0"><img src="assets/canva-3.webp" alt=""></div>
+      <div class="card t" style="inset:0"><img src="assets/canva-1.webp" alt=""></div>
+    </div>
+  </div>
+
+  <!-- S6 publier -->
+  <div id="s6" class="scene clip" data-start="15.6" data-duration="3.0" data-track-index="7">
+    <div class="head" style="top:220px">
+      <div class="line sm"><span>Tu n'as plus qu'à</span></div>
+      <div class="line"><span class="blue">publier.</span></div>
+    </div>
+    <div id="phone" style="position:absolute;left:265px;top:560px;width:550px;height:1120px;border-radius:72px;background:#0A0A0A;padding:18px;box-shadow:0 60px 110px -30px rgba(8,18,54,.5)">
+      <div style="position:absolute;left:50%;top:30px;width:150px;height:38px;margin-left:-75px;border-radius:20px;background:#0A0A0A;z-index:3"></div>
+      <div style="position:relative;width:100%;height:100%;border-radius:56px;overflow:hidden;background:#fff">
+        <div style="height:150px;display:flex;align-items:flex-end;gap:16px;padding:0 28px 18px;border-bottom:1px solid #E6E9F2">
+          <div style="width:62px;height:62px;border-radius:50%;background:#1353F4;display:grid;place-items:center"><img src="assets/logo-blanc.png" style="width:52px" alt=""></div>
+          <div style="font-weight:800;font-size:26px;padding-bottom:14px">ton.club</div>
+        </div>
+        <div style="padding:22px 22px 0"><div class="card" style="position:relative;width:100%;height:600px;border-radius:22px;box-shadow:none"><img src="assets/stetienne-victoire.webp" alt=""></div></div>
+        <div style="padding:22px 28px;font-weight:700;font-size:24px;color:#4A5372">Victoire ce week-end ! Merci à tous les supporters.</div>
+        <div id="pub" style="position:absolute;left:28px;right:28px;bottom:34px;height:92px;border-radius:24px;background:#1353F4;color:#fff;display:grid;place-items:center;font-weight:800;font-size:32px;letter-spacing:.02em">Publier</div>
+        <div id="ok" style="position:absolute;left:28px;right:28px;bottom:34px;height:92px;border-radius:24px;background:#081236;color:#fff;display:flex;justify-content:center;align-items:center;gap:14px;font-weight:800;font-size:32px;opacity:0"><div class="chk" style="width:40px;height:40px"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.2 4.2L19 7" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Publié</div>
+        <div id="ripple" style="position:absolute;left:250px;bottom:80px;width:40px;height:40px;margin:-20px;border-radius:50%;border:6px solid #fff;opacity:0"></div>
+      </div>
+    </div>
+    <svg id="cursor" viewBox="0 0 64 80" style="position:absolute;left:780px;top:1620px;width:92px;height:115px;filter:drop-shadow(0 10px 14px rgba(8,18,54,.35))"><path d="M10 6 L10 62 L24 50 L34 74 L44 70 L34 46 L54 46 Z" fill="#fff" stroke="#081236" stroke-width="4" stroke-linejoin="round"/></svg>
+  </div>
+
+  <!-- S7 CTA -->
+  <div id="s7" class="scene clip" data-start="18.6" data-duration="3.2" data-track-index="8">
+    <div class="head" style="top:230px">
+      <div class="line"><span>Parle-nous</span></div>
+      <div class="line"><span class="blue">de ton club.</span></div>
+    </div>
+    <img id="kubo" src="assets/kubo-coucou.png" style="position:absolute;left:300px;top:640px;width:480px" alt="">
+    <img id="s7logo" src="assets/logo-officiel.png" style="position:absolute;left:315px;top:1330px;width:450px" alt="">
+    <div id="cta" style="position:absolute;left:220px;top:1520px;width:640px;height:118px;border-radius:999px;background:#1353F4;color:#fff;display:grid;place-items:center;font-weight:800;font-size:40px;box-shadow:0 30px 60px -18px rgba(19,83,244,.65)">Parler de mon club</div>
+    <div id="url" style="position:absolute;left:0;right:0;top:1680px;text-align:center;font-weight:700;font-size:34px;letter-spacing:.14em;color:#4A5372">KLUBIK.PRO</div>
+  </div>
+
+  <!-- S8 end -->
+  <div id="s8" class="scene clip" data-start="21.8" data-duration="2.8" data-track-index="9" style="background:#000">
+    <img id="endlogo" src="assets/logo-officiel.png" style="position:absolute;left:240px;top:880px;width:600px" alt="">
+  </div>
+
+  <div id="flash" class="flash clip" data-start="0" data-duration="24.6" data-track-index="10"></div>
+  <div id="noise" class="clip" data-start="0" data-duration="24.6" data-track-index="12" style="position:absolute;inset:0;background:url(assets/noise.png);mix-blend-mode:overlay;opacity:.07"></div>
+  <div id="vig" class="clip" data-start="0" data-duration="24.6" data-track-index="13" style="position:absolute;inset:0;background:radial-gradient(130% 90% at 50% 50%,transparent 60%,rgba(8,18,54,.18) 100%)"></div>
+</div>
+
+<script>
+window.__timelines = window.__timelines || {};
+var tl = gsap.timeline({ paused: true });
+var E = "expo.out", P = "power3.in";
+function lines(sel, t, st) { tl.fromTo(sel + " .line>span", { yPercent: 115, rotate: 4 }, { yPercent: 0, rotate: 0, duration: .55, ease: E, stagger: st || .12 }, t); }
+function out(sel, t) { tl.to(sel, { y: -140, filter: "blur(18px)", opacity: 0, duration: .26, ease: P }, t); }
+function inn(sel, t) { tl.fromTo(sel, { y: 160, filter: "blur(18px)", opacity: 0 }, { y: 0, filter: "blur(0px)", opacity: 1, duration: .4, ease: E }, t); }
+function count(sel, from, to, t, d) { var o = { v: from }; tl.to(o, { v: to, duration: d, ease: "power2.out", onUpdate: function () { document.querySelector(sel).textContent = Math.round(o.v); } }, t); }
+function flash(t) { tl.fromTo("#flash", { opacity: .85 }, { opacity: 0, duration: .22, ease: "power2.out", immediateRender: false }, t); }
+
+// S1 : the hook, line by line, a blank sheet floating
+lines("#s1", .1, .38);
+tl.fromTo("#s1card", { y: 260, rotateX: 35, rotateZ: -8, opacity: 0, scale: .8 }, { y: 0, rotateX: 0, rotateZ: -3, opacity: 1, scale: 1, duration: .8, ease: E }, .15);
+tl.to("#s1card", { rotateZ: 3, y: -16, duration: 2.0, ease: "sine.inOut" }, .95);
+tl.to("#s1 .line:last-child span", { scale: 1.08, duration: .18, yoyo: true, repeat: 1, ease: "power2.out" }, 1.45);
+tl.to("#s1 .head", { y: -140, filter: "blur(18px)", opacity: 0, duration: .26, ease: P }, 3.04);
+
+// S2 : the sheet turns into the club's crest
+lines("#s2", 3.32, .14);
+tl.fromTo("#s2flip", { rotateY: 0 }, { rotateY: 180, duration: .7, ease: "back.out(1.4)" }, 3.55);
+tl.fromTo("#s2wrap", { scale: 1 }, { scale: 1.12, duration: 1.4, ease: "power1.out" }, 3.6);
+flash(3.9);
+out("#s2", 5.14);
+
+// S3 : 3 jerseys
+inn("#s3", 5.4);
+count("#s3num", 1, 3, 5.5, .9);
+tl.fromTo("#s3 .line>span", { yPercent: 115 }, { yPercent: 0, duration: .5, ease: E, stagger: .1 }, 5.5);
+tl.fromTo("#s3pill", { scale: 0, opacity: 0 }, { scale: 1, opacity: 1, duration: .45, ease: "back.out(2)" }, 6.0);
+tl.fromTo("#s3a", { x: 900, rotate: 8 }, { x: 0, rotate: 0, duration: .6, ease: E }, 5.55);
+tl.fromTo("#s3b", { x: 1100, rotate: 8 }, { x: 0, rotate: 0, duration: .5, ease: E }, 7.1);
+tl.to("#s3a", { x: -500, scale: .85, opacity: 0, duration: .5, ease: "power2.inOut" }, 7.1);
+tl.fromTo("#s3b", { scale: 1 }, { scale: 1.05, duration: 1.2, ease: "none" }, 7.3);
+out("#s3", 8.34);
+
+// S4 : every visual of the season, ticked one by one
+inn("#s4", 8.6);
+lines("#s4", 8.62, .12);
+var chips = document.querySelectorAll("#s4 .c");
+chips.forEach(function (c) { c.insertAdjacentHTML("afterbegin", '<div class="chk"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.2 4.2L19 7" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>'); });
+var cards = document.querySelectorAll("#s4 .f");
+for (var i = 0; i < cards.length; i++) {
+  var t = 8.85 + i * .5;
+  tl.fromTo(cards[i], { x: 760, rotateY: -38, filter: "blur(14px)", opacity: 0 }, { x: 0, rotateY: 0, filter: "blur(0px)", opacity: 1, duration: .38, ease: E }, t);
+  if (i < cards.length - 1) tl.to(cards[i], { x: -260, scale: .86, opacity: 0, filter: "blur(10px)", duration: .32, ease: "power2.in" }, t + .44);
+  tl.fromTo(chips[i], { scale: 0, opacity: 0 }, { scale: 1, opacity: 1, duration: .38, ease: "back.out(2.2)" }, t + .08);
+}
+tl.to("#s4 .f:last-child", { scale: 1.04, duration: .8, ease: "none" }, 11.6);
+out("#s4", 12.34);
+
+// S5 : 10 templates fanning out
+inn("#s5", 12.6);
+count("#s5num", 0, 10, 12.65, 1.0);
+tl.fromTo("#s5 .line>span", { yPercent: 115 }, { yPercent: 0, duration: .5, ease: E, stagger: .1 }, 12.65);
+tl.fromTo("#s5p1", { scale: 0, opacity: 0 }, { scale: 1, opacity: 1, duration: .42, ease: "back.out(2)" }, 13.1);
+tl.fromTo("#s5p2", { scale: 0, opacity: 0 }, { scale: 1, opacity: 1, duration: .42, ease: "back.out(2)" }, 13.45);
+var fan = document.querySelectorAll("#s5 .t");
+var fx = [-330, -165, 165, 330, 0], fr = [-16, -8, 8, 16, 0], fy = [70, 22, 22, 70, 0];
+for (var j = 0; j < fan.length; j++) {
+  tl.fromTo(fan[j], { y: 900, rotate: 0, x: 0 }, { y: 0, duration: .45, ease: E }, 12.75 + j * .07);
+  tl.to(fan[j], { x: fx[j], rotate: fr[j], y: fy[j], duration: .6, ease: "back.out(1.6)" }, 13.35);
+}
+tl.to("#s5 .t:last-child", { scale: 1.1, duration: 1.2, ease: "power1.out" }, 13.6);
+out("#s5", 15.34);
+
+// S6 : publish from the phone
+inn("#s6", 15.6);
+lines("#s6", 15.62, .14);
+tl.fromTo("#phone", { y: 700, rotate: 6 }, { y: 0, rotate: 0, duration: .65, ease: E }, 15.65);
+tl.fromTo("#cursor", { x: 300, y: 300, opacity: 0 }, { x: -260, y: -10, opacity: 1, duration: .8, ease: "power3.inOut" }, 16.2);
+tl.to("#cursor", { scale: .82, duration: .08, yoyo: true, repeat: 1 }, 17.0);
+tl.to("#pub", { scale: .94, duration: .08, yoyo: true, repeat: 1 }, 17.0);
+tl.fromTo("#ripple", { scale: .2, opacity: 1 }, { scale: 9, opacity: 0, duration: .55, ease: "power2.out" }, 17.02);
+tl.to("#ok", { opacity: 1, duration: .15 }, 17.12);
+tl.fromTo("#ok .chk", { scale: 0 }, { scale: 1, duration: .4, ease: "back.out(3)" }, 17.14);
+tl.to("#cursor", { x: -140, y: 220, opacity: 0, duration: .5, ease: "power2.in" }, 17.6);
+tl.to("#phone", { scale: 1.04, duration: 1.2, ease: "none" }, 17.2);
+out("#s6", 18.34);
+
+// S7 : call to action, Kubo waves
+inn("#s7", 18.6);
+lines("#s7", 18.62, .14);
+tl.fromTo("#kubo", { y: 700, rotate: -10 }, { y: 0, rotate: 0, duration: .7, ease: "back.out(1.5)" }, 18.75);
+tl.to("#kubo", { rotate: 4, duration: .35, yoyo: true, repeat: 3, ease: "sine.inOut" }, 19.45);
+tl.fromTo("#s7logo", { scale: .6, opacity: 0 }, { scale: 1, opacity: 1, duration: .5, ease: E }, 19.05);
+tl.fromTo("#cta", { scale: 0 }, { scale: 1, duration: .5, ease: "back.out(2)" }, 19.25);
+tl.to("#cta", { scale: 1.06, duration: .3, yoyo: true, repeat: 3, ease: "sine.inOut" }, 19.9);
+tl.fromTo("#url", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: .4, ease: E }, 19.5);
+tl.to("#s7", { opacity: 0, duration: .3 }, 21.5);
+
+// S8 : Klubik logo on black
+tl.fromTo("#endlogo", { opacity: 0, scale: .92 }, { opacity: 1, scale: 1, duration: .6, ease: "power2.out" }, 21.9);
+tl.to("#endlogo", { opacity: 0, duration: .5 }, 24.0);
+[["#s1",0,3.3],["#s2",3.3,2.1],["#s3",5.4,3.2],["#s4",8.6,4.0],["#s5",12.6,3.0],["#s6",15.6,3.0],["#s7",18.6,3.2]].forEach(function(c){ tl.fromTo(c[0],{scale:1},{scale:1.045,duration:c[2],ease:"none",immediateRender:false},c[1]); });
+tl.fromTo("#glass",{scale:1.12,x:-30},{scale:1.0,x:30,duration:21.8,ease:"none"},0);
+var nz=document.getElementById("noise");
+tl.to({},{duration:24.6,ease:"none",onUpdate:function(){var f=Math.floor(tl.time()*15);nz.style.backgroundPosition=((f*137)%512)+"px "+((f*271)%512)+"px";}},0);
+window.__timelines["main"] = tl;
+</script>
+</body>
+</html>

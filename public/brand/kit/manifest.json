@@ -1,0 +1,253 @@
+{
+ "logos": [
+  {
+   "file": "logos/logo-blanc.png",
+   "w": 1000,
+   "h": 291
+  },
+  {
+   "file": "logos/logo-officiel.png",
+   "w": 1000,
+   "h": 291
+  },
+  {
+   "file": "logos/logo-original.png",
+   "w": 1000,
+   "h": 291
+  }
+ ],
+ "kubo": [
+  {
+   "file": "kubo/kubo-coucou.png",
+   "w": 693,
+   "h": 963
+  },
+  {
+   "file": "kubo/kubo-coucou2.png",
+   "w": 526,
+   "h": 673
+  },
+  {
+   "file": "kubo/kubo-dos.png",
+   "w": 628,
+   "h": 1000
+  },
+  {
+   "file": "kubo/kubo-face.png",
+   "w": 624,
+   "h": 1000
+  },
+  {
+   "file": "kubo/kubo-marche-droite.png",
+   "w": 694,
+   "h": 1000
+  },
+  {
+   "file": "kubo/kubo-marche-gauche-1.png",
+   "w": 667,
+   "h": 1000
+  },
+  {
+   "file": "kubo/kubo-marche-gauche.png",
+   "w": 517,
+   "h": 708
+  },
+  {
+   "file": "kubo/kubo-profil-droit.png",
+   "w": 474,
+   "h": 1000
+  },
+  {
+   "file": "kubo/kubo-profil-gauche.png",
+   "w": 464,
+   "h": 1000
+  },
+  {
+   "file": "kubo/kubo-sourire.png",
+   "w": 633,
+   "h": 935
+  }
+ ],
+ "realisations": [
+  {
+   "file": "realisations/jaisle-anniversaire.webp",
+   "w": 900,
+   "h": 1125,
+   "group": "Affiches clubs"
+  },
+  {
+   "file": "realisations/jaisle-calendrier.webp",
+   "w": 900,
+   "h": 1125,
+   "group": "Affiches clubs"
+  },
+  {
+   "file": "realisations/jaisle-coupedefrance.webp",
+   "w": 900,
+   "h": 1125,
+   "group": "Affiches clubs"
+  },
+  {
+   "file": "realisations/jaisle-groupe.webp",
+   "w": 900,
+   "h": 1125,
+   "group": "Affiches clubs"
+  },
+  {
+   "file": "realisations/jaisle-match.webp",
+   "w": 900,
+   "h": 1125,
+   "group": "Affiches clubs"
+  },
+  {
+   "file": "realisations/jaisle-programme.webp",
+   "w": 900,
+   "h": 1125,
+   "group": "Affiches clubs"
+  },
+  {
+   "file": "realisations/stetienne-bienvenue.webp",
+   "w": 900,
+   "h": 1125,
+   "group": "Affiches clubs"
+  },
+  {
+   "file": "realisations/stetienne-match.webp",
+   "w": 900,
+   "h": 1125,
+   "group": "Affiches clubs"
+  },
+  {
+   "file": "realisations/stetienne-mitemps.webp",
+   "w": 900,
+   "h": 1125,
+   "group": "Affiches clubs"
+  },
+  {
+   "file": "realisations/stetienne-partenaire.webp",
+   "w": 900,
+   "h": 1125,
+   "group": "Affiches clubs"
+  },
+  {
+   "file": "realisations/stetienne-planning.webp",
+   "w": 900,
+   "h": 1125,
+   "group": "Affiches clubs"
+  },
+  {
+   "file": "realisations/stetienne-victoire.webp",
+   "w": 900,
+   "h": 1125,
+   "group": "Affiches clubs"
+  },
+  {
+   "file": "realisations/stgilles-1.webp",
+   "w": 1080,
+   "h": 1350,
+   "group": "Affiches clubs"
+  },
+  {
+   "file": "realisations/stgilles-10.webp",
+   "w": 1080,
+   "h": 1350,
+   "group": "Affiches clubs"
+  },
+  {
+   "file": "realisations/stgilles-2.webp",
+   "w": 1080,
+   "h": 1350,
+   "group": "Affiches clubs"
+  },
+  {
+   "file": "realisations/stgilles-3.webp",
+   "w": 1080,
+   "h": 1350,
+   "group": "Affiches clubs"
+  },
+  {
+   "file": "realisations/stgilles-4.webp",
+   "w": 1080,
+   "h": 1350,
+   "group": "Affiches clubs"
+  },
+  {
+   "file": "realisations/stgilles-5.webp",
+   "w": 1080,
+   "h": 1350,
+   "group": "Affiches clubs"
+  },
+  {
+   "file": "realisations/stgilles-6.webp",
+   "w": 1080,
+   "h": 1350,
+   "group": "Affiches clubs"
+  },
+  {
+   "file": "realisations/stgilles-7.webp",
+   "w": 1080,
+   "h": 1350,
+   "group": "Affiches clubs"
+  },
+  {
+   "file": "realisations/stgilles-8.webp",
+   "w": 1080,
+   "h": 1350,
+   "group": "Affiches clubs"
+  },
+  {
+   "file": "realisations/stgilles-9.webp",
+   "w": 1080,
+   "h": 1350,
+   "group": "Affiches clubs"
+  },
+  {
+   "file": "realisations/jaisle-ecusson.webp",
+   "w": 1080,
+   "h": 1351,
+   "group": "JA Isle"
+  },
+  {
+   "file": "realisations/jaisle-maillot-exterieur.webp",
+   "w": 1600,
+   "h": 1144,
+   "group": "JA Isle"
+  },
+  {
+   "file": "realisations/jaisle-maillot.webp",
+   "w": 1600,
+   "h": 1144,
+   "group": "JA Isle"
+  },
+  {
+   "file": "realisations/canva-1.webp",
+   "w": 1080,
+   "h": 1350,
+   "group": "Templates Canva"
+  },
+  {
+   "file": "realisations/canva-2.webp",
+   "w": 1080,
+   "h": 1350,
+   "group": "Templates Canva"
+  },
+  {
+   "file": "realisations/canva-3.webp",
+   "w": 1080,
+   "h": 1350,
+   "group": "Templates Canva"
+  },
+  {
+   "file": "realisations/canva-4.webp",
+   "w": 1080,
+   "h": 1350,
+   "group": "Templates Canva"
+  },
+  {
+   "file": "realisations/canva-5.webp",
+   "w": 1080,
+   "h": 1350,
+   "group": "Templates Canva"
+  }
+ ]
+}

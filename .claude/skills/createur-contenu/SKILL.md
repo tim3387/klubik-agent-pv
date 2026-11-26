@@ -165,10 +165,11 @@ Il l'enregistre au téléphone et la dépose dans le Drive, dossier « Voix ». 
 Dossier « Musiques » de son Drive. Mets-la **18 dB sous la voix** (`volume=-18dB`), avec un fondu de sortie de 1,5 s. Si le réel n'a pas de voix, 12 dB sous le niveau maximal.
 
 ### 5.3 Les effets sonores
-Deux sources, dans cet ordre :
-1. **La bibliothèque libre de droits** de Higgsfield, dans son bac à sable : `$HF_WORKFLOWS/katana/scripts/sfx_lib/` (dossiers `whoosh`, `hit`, `ui_blip`, `boom`, `riser`, `flash`, `type`, `glitch`…). Gratuite.
-2. **Le catalogue Epidemic Sound**, via Higgsfield : `search_sound_effects` (décris le son en une phrase), `preview_sound_effect` (écouter), `download_sound_effect` (récupérer un MP3). **Chaque téléchargement consomme un quota** : n'en fais que pour un son précis dont tu as vraiment besoin.
-3. **Sa banque personnelle** (si elle existe) : `sons/CATALOGUE.md` dans le dépôt liste ses sons et où les trouver. Consulte-le d'abord.
+Quatre sources, dans cet ordre (détail et prompts prêts à l'emploi : `docs/guides/banque-de-sons.md`) :
+1. **La bibliothèque locale** `sons/lib/` (index : `sons/CATALOGUE.md`). Gratuite : consulte-la toujours d'abord.
+2. **ElevenLabs, effets sonores** : si le son manque, génère-le avec un prompt court et concret (objet, action, lieu, caractère), garde la meilleure variante et **range-la dans la bibliothèque locale** avec une ligne dans le catalogue, pour ne jamais la regénérer. Lis la documentation à jour avant le premier appel. Demande avant de générer plus de 5 sons : chaque génération consomme des crédits.
+3. **La bibliothèque libre de droits de Higgsfield** : `$HF_WORKFLOWS/katana/scripts/sfx_lib/` dans son bac à sable (whoosh, hit, ui_blip, boom, riser, flash, type, glitch…). Gratuite.
+4. **Le catalogue Epidemic Sound**, via Higgsfield : `search_sound_effects`, `preview_sound_effect`, `download_sound_effect`. **Chaque téléchargement consomme un quota** : seulement pour un son précis.
 
 Le mixage se fait dans le bac à sable Higgsfield : écris un petit script qui place chaque son avec `adelay` aux temps des animations et les mélange avec `amix` (`normalize=0`, puis `alimiter=limit=0.89`), envoie le résultat avec `media_upload` + `curl -X PUT` + `media_confirm`, puis télécharge-le. Assemble ensuite : `ffmpeg -i video.mp4 -i son.m4a -map 0:v -map 1:a -c:v copy -c:a aac -b:a 160k -shortest -movflags +faststart final.mp4`.
 
@@ -178,11 +179,17 @@ Le mixage se fait dans le bac à sable Higgsfield : écris un petit script qui p
 
 1. Envoie le MP4 dans la conversation avec 3 lignes : ce que c'est, la durée, ce qu'il peut demander de retoucher.
 2. **Retouches** : une demande précise (« scène 3 : remplace “Basket” par “Volley” ») ne change que ça, puis refais le rendu. Les captures d'écran qu'il envoie font foi.
-3. Quand il valide, propose « Je la programme ? » : la publication se fait par l'agent Publication, avec la légende, les comptes et l'heure.
+3. Quand il valide, propose « Je la programme ? » : la publication se fait **dans cette même conversation** avec la compétence `publier` (légende, comptes, heure), toujours par le tableau de bord : jamais en publiant directement avec le connecteur Zernio, sinon le planning du tableau de bord ne verrait pas le post.
 4. Range le réel validé dans `motion/reels/<date>-<nom>/` (HTML et visuels, sans le MP4) et fais un commit « Réel : <titre> ».
 5. Si Timothé exprime une préférence nouvelle (« je veux toujours le logo en haut »), ajoute-la à ce fichier.
 
-## 7. Contrôle avant de livrer
+## 7. Aller plus loin (guides)
+- `docs/guides/checklist-reel.md` : les questions à poser avant de construire (objectif, cible, hook, structure d'un réel de vente).
+- `docs/guides/montage-hyperframes-video-use.md` : HyperFrames, son catalogue de blocs (`npx hyperframes add <nom>`) et Video-Use (option pour dégrossir de longs rushes ; demande une clé ElevenLabs, non testé ici).
+- `docs/guides/generation-video-ia.md` : règles pour générer des plans photoréalistes (start frame, un seul mouvement, plan par plan).
+- `docs/guides/clone-heygen-elevenlabs.md` : option pour que Timothé produise sans se filmer.
+
+## 8. Contrôle avant de livrer
 - [ ] Chaque texte est lisible (36 px au moins), sans faute, noms de clubs bien écrits.
 - [ ] Aucun chiffre inventé, aucun prix, aucun nom d'outil.
 - [ ] Le rythme est tenu, aucune scène vide ou blanche.

@@ -1,0 +1,11 @@
+{
+  "name": "klubik-motion",
+  "private": true,
+  "description": "Réels Klubik en motion design (HyperFrames)",
+  "dependencies": {
+    "hyperframes": "0.8.222"
+  },
+  "devDependencies": {
+    "tsx": "4.23.15"
+  }
+}

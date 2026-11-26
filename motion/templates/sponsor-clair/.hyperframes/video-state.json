@@ -1,0 +1,144 @@
+{
+  "version": 1,
+  "historyId": "ffabaab3-9441-4bbf-b1fa-e7b7f58d13cf",
+  "currentRevision": null,
+  "pendingChanges": false,
+  "files": {
+    "assets/bg.jpg": {
+      "hash": "f442b447f58c9182efaa313b70e8fb6027d6cf8b4b83298f58abe8dee2d5f8bf",
+      "content": "/root/.cache/hyperframes/history/ffabaab3-9441-4bbf-b1fa-e7b7f58d13cf/blobs/f4/f442b447f58c9182efaa313b70e8fb6027d6cf8b4b83298f58abe8dee2d5f8bf"
+    },
+    "assets/canva-1.webp": {
+      "hash": "981b93109893578c2351f0c54dc8eb768cede7e6489cc0ee3f97a0a0bac03e52",
+      "content": "/root/.cache/hyperframes/history/ffabaab3-9441-4bbf-b1fa-e7b7f58d13cf/blobs/98/981b93109893578c2351f0c54dc8eb768cede7e6489cc0ee3f97a0a0bac03e52"
+    },
+    "assets/canva-2.webp": {
+      "hash": "de9c9dae926242971863a74cc46f79f7ffe12fb751331c69658b72113319dbb2",
+      "content": "/root/.cache/hyperframes/history/ffabaab3-9441-4bbf-b1fa-e7b7f58d13cf/blobs/de/de9c9dae926242971863a74cc46f79f7ffe12fb751331c69658b72113319dbb2"
+    },
+    "assets/canva-3.webp": {
+      "hash": "e77d3623c35f4bfbecd05588082ad9a890356601624284c6384d3a9381bbf5c2",
+      "content": "/root/.cache/hyperframes/history/ffabaab3-9441-4bbf-b1fa-e7b7f58d13cf/blobs/e7/e77d3623c35f4bfbecd05588082ad9a890356601624284c6384d3a9381bbf5c2"
+    },
+    "assets/canva-4.webp": {
+      "hash": "41170b465cb7a6da6ffaa747daedbc5e2c0d03ba3c85c9e2b66cb61264bdcad5",
+      "content": "/root/.cache/hyperframes/history/ffabaab3-9441-4bbf-b1fa-e7b7f58d13cf/blobs/41/41170b465cb7a6da6ffaa747daedbc5e2c0d03ba3c85c9e2b66cb61264bdcad5"
+    },
+    "assets/canva-5.webp": {
+      "hash": "6a107ffbb066065160c14219051d189ec4d1a5a1942cdcf3ea0079a9a5900b6c",
+      "content": "/root/.cache/hyperframes/history/ffabaab3-9441-4bbf-b1fa-e7b7f58d13cf/blobs/6a/6a107ffbb066065160c14219051d189ec4d1a5a1942cdcf3ea0079a9a5900b6c"
+    },
+    "assets/gsap.min.js": {
+      "hash": "c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280",
+      "content": "/root/.cache/hyperframes/history/ffabaab3-9441-4bbf-b1fa-e7b7f58d13cf/blobs/c1/c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280"
+    },
+    "assets/jaisle-calendrier.webp": {
+      "hash": "09d3fa54bc1c35fbd886bfd728005b20ab20f5a7beb0ab5d4490e4950140466b",
+      "content": "/root/.cache/hyperframes/history/ffabaab3-9441-4bbf-b1fa-e7b7f58d13cf/blobs/09/09d3fa54bc1c35fbd886bfd728005b20ab20f5a7beb0ab5d4490e4950140466b"
+    },
+    "assets/jaisle-ecusson.webp": {
+      "hash": "235a123ea8395efaa4821996378b6cb7271c6a6e64804ef26018ca78bea34e22",
+      "content": "/root/.cache/hyperframes/history/ffabaab3-9441-4bbf-b1fa-e7b7f58d13cf/blobs/23/235a123ea8395efaa4821996378b6cb7271c6a6e64804ef26018ca78bea34e22"
+    },
+    "assets/jaisle-maillot-exterieur.webp": {
+      "hash": "3e7df18cf6822a593ecefd1b0b89b430b48db18a676e37ea8e24c8a9aa0564c1",
+      "content": "/root/.cache/hyperframes/history/ffabaab3-9441-4bbf-b1fa-e7b7f58d13cf/blobs/3e/3e7df18cf6822a593ecefd1b0b89b430b48db18a676e37ea8e24c8a9aa0564c1"
+    },
+    "assets/jaisle-maillot.webp": {
+      "hash": "7b415693894aae7e16a133e24299a8c1af6fe6ad5a9351df2729df0b66240224",
+      "content": "/root/.cache/hyperframes/history/ffabaab3-9441-4bbf-b1fa-e7b7f58d13cf/blobs/7b/7b415693894aae7e16a133e24299a8c1af6fe6ad5a9351df2729df0b66240224"
+    },
+    "assets/jaisle-match.webp": {
+      "hash": "b5b08949cc942260d4ecdda34034ac40da9cd869c087e7b621df967c5011a9b9",
+      "content": "/root/.cache/hyperframes/history/ffabaab3-9441-4bbf-b1fa-e7b7f58d13cf/blobs/b5/b5b08949cc942260d4ecdda34034ac40da9cd869c087e7b621df967c5011a9b9"
+    },
+    "assets/jersey.jpg": {
+      "hash": "ca78d5f0b7872e387dacaa0224ec04f9bb0b66ae622161d3fe2501e7a954d868",
+      "content": "/root/.cache/hyperframes/history/ffabaab3-9441-4bbf-b1fa-e7b7f58d13cf/blobs/ca/ca78d5f0b7872e387dacaa0224ec04f9bb0b66ae622161d3fe2501e7a954d868"
+    },
+    "assets/kubo-coucou.png": {
+      "hash": "0a3441091284b96f84abd4b897c18d29175ab3b323f40979f41d71857ddcd0de",
+      "content": "/root/.cache/hyperframes/history/ffabaab3-9441-4bbf-b1fa-e7b7f58d13cf/blobs/0a/0a3441091284b96f84abd4b897c18d29175ab3b323f40979f41d71857ddcd0de"
+    },
+    "assets/logo-blanc.png": {
+      "hash": "ad4b49b425b3e2223a8b8a5b7361572d20da9606a13ca3a900d1106ad8b0c639",
+      "content": "/root/.cache/hyperframes/history/ffabaab3-9441-4bbf-b1fa-e7b7f58d13cf/blobs/ad/ad4b49b425b3e2223a8b8a5b7361572d20da9606a13ca3a900d1106ad8b0c639"
+    },
+    "assets/logo-officiel.png": {
+      "hash": "4a3aaf1664b0c92ae2d06367ead79e288bea41989f3f0cfd1fbdbe17268e77b3",
+      "content": "/root/.cache/hyperframes/history/ffabaab3-9441-4bbf-b1fa-e7b7f58d13cf/blobs/4a/4a3aaf1664b0c92ae2d06367ead79e288bea41989f3f0cfd1fbdbe17268e77b3"
+    },
+    "assets/montserrat-latin-600-normal.woff2": {
+      "hash": "d857325c360f7128b347ca924c1974967aaa886ba47dad22e4042d6c38b26a83",
+      "content": "/root/.cache/hyperframes/history/ffabaab3-9441-4bbf-b1fa-e7b7f58d13cf/blobs/d8/d857325c360f7128b347ca924c1974967aaa886ba47dad22e4042d6c38b26a83"
+    },
+    "assets/montserrat-latin-700-normal.woff2": {
+      "hash": "f9d9e65b15372cebcafc3acd1e664a564c5c4b23278de4d5760de9a13c530371",
+      "content": "/root/.cache/hyperframes/history/ffabaab3-9441-4bbf-b1fa-e7b7f58d13cf/blobs/f9/f9d9e65b15372cebcafc3acd1e664a564c5c4b23278de4d5760de9a13c530371"
+    },
+    "assets/montserrat-latin-800-normal.woff2": {
+      "hash": "ba826fb84c2e961578adf3a08b5778b87905d4443445d1d56d84f9f157d5ea4b",
+      "content": "/root/.cache/hyperframes/history/ffabaab3-9441-4bbf-b1fa-e7b7f58d13cf/blobs/ba/ba826fb84c2e961578adf3a08b5778b87905d4443445d1d56d84f9f157d5ea4b"
+    },
+    "assets/montserrat-latin-900-normal.woff2": {
+      "hash": "5b6958520638bb8609f9eacb17c4d189563efeae96d5da49f7c2043988697205",
+      "content": "/root/.cache/hyperframes/history/ffabaab3-9441-4bbf-b1fa-e7b7f58d13cf/blobs/5b/5b6958520638bb8609f9eacb17c4d189563efeae96d5da49f7c2043988697205"
+    },
+    "assets/noise.png": {
+      "hash": "5f5f8cc329933b6a75a5b0c022b8bd4d3a303c9d89b2cc7fba6c0d56440faaea",
+      "content": "/root/.cache/hyperframes/history/ffabaab3-9441-4bbf-b1fa-e7b7f58d13cf/blobs/5f/5f5f8cc329933b6a75a5b0c022b8bd4d3a303c9d89b2cc7fba6c0d56440faaea"
+    },
+    "assets/patch.jpg": {
+      "hash": "f88261d729a64b9928a29c7d9736c89ab44cdb741edec01d75b6958ecade5400",
+      "content": "/root/.cache/hyperframes/history/ffabaab3-9441-4bbf-b1fa-e7b7f58d13cf/blobs/f8/f88261d729a64b9928a29c7d9736c89ab44cdb741edec01d75b6958ecade5400"
+    },
+    "assets/playfair-display-latin-700-italic.woff2": {
+      "hash": "de2f4041e7ef84f418bd0144484e521e8df849aff47762230c981704b9661877",
+      "content": "/root/.cache/hyperframes/history/ffabaab3-9441-4bbf-b1fa-e7b7f58d13cf/blobs/de/de2f4041e7ef84f418bd0144484e521e8df849aff47762230c981704b9661877"
+    },
+    "assets/poster.jpg": {
+      "hash": "5977b565ba39e977317c04f990b039cb7e08ebc534377c1f9350557d6d1c6bf4",
+      "content": "/root/.cache/hyperframes/history/ffabaab3-9441-4bbf-b1fa-e7b7f58d13cf/blobs/59/5977b565ba39e977317c04f990b039cb7e08ebc534377c1f9350557d6d1c6bf4"
+    },
+    "assets/stetienne-match.webp": {
+      "hash": "6a942bfb5f68d86352f7326041ec6479d60bc1cd3a0cb6c3cbb18b2d9cb58415",
+      "content": "/root/.cache/hyperframes/history/ffabaab3-9441-4bbf-b1fa-e7b7f58d13cf/blobs/6a/6a942bfb5f68d86352f7326041ec6479d60bc1cd3a0cb6c3cbb18b2d9cb58415"
+    },
+    "assets/stetienne-partenaire.webp": {
+      "hash": "fe3fe520e3f7d17711d02909d810e1b80294438b3452f5d3dabbde6fd57624b5",
+      "content": "/root/.cache/hyperframes/history/ffabaab3-9441-4bbf-b1fa-e7b7f58d13cf/blobs/fe/fe3fe520e3f7d17711d02909d810e1b80294438b3452f5d3dabbde6fd57624b5"
+    },
+    "assets/stetienne-victoire.webp": {
+      "hash": "c6f4c56223cbadbb578b710a640222e19594f68231ed944084a504104db50210",
+      "content": "/root/.cache/hyperframes/history/ffabaab3-9441-4bbf-b1fa-e7b7f58d13cf/blobs/c6/c6f4c56223cbadbb578b710a640222e19594f68231ed944084a504104db50210"
+    },
+    "index.html": {
+      "hash": "483d40cdbcc86b96d8a7cc0add8403d8725d1fa34defa5643fc4e576ee272b6e",
+      "content": "/root/.cache/hyperframes/history/ffabaab3-9441-4bbf-b1fa-e7b7f58d13cf/blobs/48/483d40cdbcc86b96d8a7cc0add8403d8725d1fa34defa5643fc4e576ee272b6e"
+    }
+  },
+  "revisions": {},
+  "checks": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  },
+  "snapshots": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  },
+  "renders": {
+    "latest": {
+      "id": "0f233882-ebac-4eda-922e-bb7b3fa58031",
+      "completedAt": 1794479368793,
+      "output": "/tmp/claude-0/-home-user-KUBLIK/1590d3fb-1f72-5161-8092-e3190cf207cf/scratchpad/hfrun/r2.mp4",
+      "status": "completed",
+      "revision": null
+    },
+    "retainedRevisions": [
+      "1fd6e210-e5e6-4d92-9463-a405f1679d83"
+    ]
+  },
+  "pendingArtifactCleanup": []
+}

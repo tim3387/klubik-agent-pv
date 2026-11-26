@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1080, height=1920">
+<title>Klubik - Le site de ton club</title>
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face{font-family:M;font-weight:600;src:url(assets/montserrat-latin-600-normal.woff2) format("woff2")}
+@font-face{font-family:M;font-weight:700;src:url(assets/montserrat-latin-700-normal.woff2) format("woff2")}
+@font-face{font-family:M;font-weight:800;src:url(assets/montserrat-latin-800-normal.woff2) format("woff2")}
+@font-face{font-family:M;font-weight:900;src:url(assets/montserrat-latin-900-normal.woff2) format("woff2")}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#F2F4F9}
+#root{position:relative;width:1080px;height:1920px;overflow:hidden;background:#F2F4F9;font-family:M,sans-serif;color:#081236}
+.bg{position:absolute;inset:0;background:radial-gradient(700px 600px at 88% 6%,rgba(19,83,244,.16),transparent 70%),radial-gradient(1100px 900px at 50% 60%,#fff,#F2F4F9 60%,#E8ECF6)}
+.scene{position:absolute;inset:0;overflow:hidden}
+.head{position:absolute;left:70px;right:70px;top:250px}
+.line{display:block;overflow:hidden;line-height:.95;padding-bottom:4px}
+.line>span{display:inline-block;font-weight:900;text-transform:uppercase;letter-spacing:-.04em;font-size:118px}
+.blue{color:#1353F4}
+.sub{position:absolute;left:50%;top:1700px;transform:translateX(-50%);background:#081236;color:#fff;font:700 30px/1 M;padding:16px 28px;border-radius:14px;white-space:nowrap;opacity:0}
+.win{position:absolute;left:110px;top:760px;width:860px;height:600px;border-radius:26px;background:#fff;overflow:hidden;box-shadow:0 50px 90px -30px rgba(8,18,54,.35),0 0 0 1px rgba(8,18,54,.06)}
+.bar{height:64px;background:#F4F6FB;border-bottom:1px solid #E3E7F1;display:flex;align-items:center;gap:12px;padding:0 24px}
+.dot{width:16px;height:16px;border-radius:50%}
+.url{flex:1;margin-left:18px;height:38px;border-radius:10px;background:#fff;border:1px solid #E3E7F1;font:600 22px/38px M;color:#8A93AE;padding-left:18px}
+.sk{position:absolute;background:#E7EBF3;border-radius:10px}
+.card{position:absolute;border-radius:30px;overflow:hidden;box-shadow:0 60px 110px -30px rgba(8,18,54,.45)}
+.card img{display:block;width:100%;height:100%;object-fit:cover}
+.pill{position:absolute;display:flex;align-items:center;gap:18px;background:#fff;border-radius:999px;padding:18px 36px 18px 18px;box-shadow:0 18px 40px -12px rgba(8,18,54,.25);font:800 38px/1 M;text-transform:uppercase;letter-spacing:-.01em;white-space:nowrap;opacity:0}
+.chk{width:58px;height:58px;border-radius:50%;background:#1353F4;display:grid;place-items:center;flex:none}
+.chk svg{width:32px;height:32px}
+.gl{position:absolute;height:44px;opacity:0}
+.full{position:absolute;inset:0;background:radial-gradient(circle at 50% 40%,#3B7BFF,#1353F4 55%,#0C3ECC)}
+#flash{position:absolute;inset:0;background:#fff;opacity:0}
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="19" data-width="1080" data-height="1920" data-fps="30">
+  <div id="bg" class="bg clip" data-start="0" data-duration="16.8" data-track-index="0"></div>
+
+  <!-- S1 no website -->
+  <div id="s1" class="scene clip" data-start="0" data-duration="2.5" data-track-index="1">
+    <div class="head"><div class="line"><span>Ton club</span></div><div class="line"><span>n'a pas de</span></div><div class="line"><span class="blue">site ?</span></div></div>
+    <div class="win" id="w1"><div class="bar"><i class="dot" style="background:#FF5F57"></i><i class="dot" style="background:#FEBC2E"></i><i class="dot" style="background:#28C840"></i><div class="url">&nbsp;</div></div>
+      <div style="position:absolute;left:0;right:0;top:170px;text-align:center;font:900 220px/1 M;color:#D5DBE8">?</div>
+      <div style="position:absolute;left:0;right:0;top:430px;text-align:center;font:700 26px/1 M;letter-spacing:.3em;color:#A6AEC4">AUCUN SITE TROUVÉ</div></div>
+    <div class="sub">Ton club n'a pas de site ?</div>
+  </div>
+
+  <!-- S2 nobody visits -->
+  <div id="s2" class="scene clip" data-start="2.5" data-duration="2.3" data-track-index="2">
+    <div class="head"><div class="line" style="--s:.82"><span style="font-size:96px">Ou un site que</span></div><div class="line"><span class="blue" style="font-size:118px">personne</span></div><div class="line"><span style="font-size:96px">ne visite ?</span></div></div>
+    <div class="win" id="w2"><div class="bar"><i class="dot" style="background:#FF5F57"></i><i class="dot" style="background:#FEBC2E"></i><i class="dot" style="background:#28C840"></i><div class="url">www.monclub-2009.fr</div></div>
+      <div class="sk" style="left:40px;top:110px;width:520px;height:46px"></div><div class="sk" style="left:40px;top:180px;width:780px;height:150px"></div>
+      <div class="sk" style="left:40px;top:356px;width:370px;height:24px"></div><div class="sk" style="left:40px;top:396px;width:300px;height:24px"></div>
+      <div style="position:absolute;left:40px;right:40px;bottom:36px;height:96px;border-radius:16px;background:#FFF3F2;display:flex;align-items:center;justify-content:space-between;padding:0 34px">
+        <span style="font:800 26px/1 M;letter-spacing:.14em;color:#B4232B">VISITES CE MOIS-CI</span><span id="vis" style="font:900 64px/1 M;color:#B4232B">132</span></div></div>
+    <div class="sub">Ou un site que personne ne visite ?</div>
+  </div>
+
+  <!-- S3 brand pop -->
+  <div id="s3" class="scene clip" data-start="4.8" data-duration="1.0" data-track-index="3">
+    <img id="b3" src="assets/logo-officiel.png" style="position:absolute;left:190px;top:820px;width:700px" alt="">
+  </div>
+
+  <!-- S4 bespoke website -->
+  <div id="s4" class="scene clip" data-start="5.8" data-duration="2.3" data-track-index="4">
+    <div class="head" style="top:210px"><div class="line"><span>Ton site</span></div><div class="line"><span class="blue">sur-mesure.</span></div></div>
+    <div id="lap" class="card" style="left:120px;top:540px;width:840px;height:1115px"><img src="assets/laptop.jpg" alt=""></div>
+    <div class="sub">Klubik crée le site de ton club.</div>
+  </div>
+
+  <!-- S5 online registration -->
+  <div id="s5" class="scene clip" data-start="8.1" data-duration="1.8" data-track-index="5">
+    <div class="head" style="top:210px"><div class="line"><span>Inscriptions</span></div><div class="line"><span class="blue">en ligne.</span></div></div>
+    <div id="phone" style="position:absolute;left:285px;top:560px;width:510px;height:1050px;border-radius:72px;background:#0A0A0A;padding:16px;box-shadow:0 60px 110px -30px rgba(8,18,54,.5)">
+      <div style="position:absolute;left:50%;top:30px;width:140px;height:36px;margin-left:-70px;border-radius:20px;background:#0A0A0A;z-index:3"></div>
+      <div style="position:relative;width:100%;height:100%;border-radius:58px;overflow:hidden;background:#fff">
+        <div style="height:300px;background:linear-gradient(160deg,#1353F4,#081236);display:flex;flex-direction:column;align-items:center;justify-content:flex-end;padding-bottom:26px">
+          <img src="assets/jaisle-ecusson.webp" style="width:130px;border-radius:18px" alt="">
+          <div style="margin-top:14px;font:900 30px/1 M;color:#fff;letter-spacing:.02em">JA ISLE HANDBALL</div></div>
+        <div style="padding:26px 30px 0">
+          <div style="font:900 34px/1.1 M">Inscription<br>saison 2026-2027</div>
+          <div style="margin-top:24px;font:700 18px/1 M;color:#4A5372">NOM</div><div style="margin-top:8px;height:58px;border-radius:14px;border:2px solid #E3E7F1;font:700 24px/54px M;padding-left:18px">Martin</div>
+          <div style="margin-top:16px;font:700 18px/1 M;color:#4A5372">PRÉNOM</div><div style="margin-top:8px;height:58px;border-radius:14px;border:2px solid #E3E7F1;font:700 24px/54px M;padding-left:18px">Léa</div>
+          <div style="margin-top:16px;font:700 18px/1 M;color:#4A5372">CATÉGORIE</div><div style="margin-top:8px;height:58px;border-radius:14px;border:2px solid #1353F4;font:800 24px/54px M;padding-left:18px;color:#1353F4">U13 filles</div>
+        </div>
+        <div id="val" style="position:absolute;left:30px;right:30px;bottom:40px;height:86px;border-radius:22px;background:#1353F4;color:#fff;display:grid;place-items:center;font:800 28px/1 M">Valider mon inscription</div>
+      </div>
+    </div>
+    <div id="notif" style="position:absolute;left:150px;top:470px;width:780px;height:128px;border-radius:30px;background:rgba(255,255,255,.96);box-shadow:0 30px 60px -18px rgba(8,18,54,.4);display:flex;align-items:center;gap:22px;padding:0 28px;opacity:0">
+      <div class="chk" style="width:70px;height:70px;border-radius:20px"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.2 4.2L19 7" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div><div style="font:800 30px/1.1 M">Nouvelle inscription reçue</div><div style="margin-top:8px;font:600 24px/1 M;color:#4A5372">U13 filles · à l'instant</div></div></div>
+    <div class="sub">Inscriptions en ligne, boutique du club.</div>
+  </div>
+
+  <!-- S6 club shop -->
+  <div id="s6" class="scene clip" data-start="9.9" data-duration="1.4" data-track-index="6">
+    <div class="head" style="top:210px"><div class="line"><span>Boutique</span></div><div class="line"><span class="blue">du club.</span></div></div>
+    <div id="mac" style="position:absolute;left:40px;top:720px;width:1000px">
+      <div style="border-radius:28px 28px 0 0;background:#0A0A0A;padding:18px 18px 22px"><div style="border-radius:10px;overflow:hidden;height:540px"><img src="assets/shop.jpg" style="width:100%;height:100%;object-fit:cover;object-position:top" alt=""></div></div>
+      <div style="height:26px;margin:0 -40px;border-radius:0 0 30px 30px;background:linear-gradient(#D9DDE6,#B9BFCC)"></div>
+    </div>
+    <div id="badge" style="position:absolute;left:942px;top:744px;width:46px;height:46px;border-radius:50%;background:#1353F4;color:#fff;font:900 26px/46px M;text-align:center;opacity:0">1</div>
+    <svg id="cur" viewBox="0 0 64 80" style="position:absolute;left:380px;top:1120px;width:70px;height:88px;filter:drop-shadow(0 10px 14px rgba(8,18,54,.35))"><path d="M10 6 L10 62 L24 50 L34 74 L44 70 L34 46 L54 46 Z" fill="#fff" stroke="#081236" stroke-width="4" stroke-linejoin="round"/></svg>
+    <div class="sub">Inscriptions en ligne, boutique du club.</div>
+  </div>
+
+  <!-- S7 included -->
+  <div id="s7" class="scene clip" data-start="11.3" data-duration="2.3" data-track-index="7">
+    <div class="pill" id="p1" style="left:120px;top:560px"><div class="chk"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.2 4.2L19 7" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Hébergement inclus</div>
+    <div class="pill" id="p2" style="left:120px;top:680px"><div class="chk"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.2 4.2L19 7" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Nom de domaine inclus</div>
+    <div id="ub" style="position:absolute;left:120px;top:880px;width:840px;height:110px;border-radius:26px;background:#fff;box-shadow:0 30px 60px -20px rgba(8,18,54,.3);display:flex;align-items:center;padding:0 34px;gap:18px;font:700 42px/1 M">
+      <svg viewBox="0 0 24 24" style="width:34px;height:34px"><rect x="5" y="10" width="14" height="10" rx="2" fill="#28C840"/><path d="M8 10V7a4 4 0 0 1 8 0v3" fill="none" stroke="#28C840" stroke-width="2.4"/></svg>
+      <span style="color:#8A93AE">https://</span><span id="typed" style="color:#081236"></span><span id="caret" style="width:4px;height:48px;background:#1353F4"></span></div>
+    <div id="live" style="position:absolute;left:150px;top:1020px;font:800 30px/1 M;letter-spacing:.12em;color:#1E9E46;opacity:0">● EN LIGNE · 24 H/24</div>
+    <div id="site" class="card" style="left:120px;top:1090px;width:840px;height:470px;border-radius:22px;opacity:0"><img src="assets/home.jpg" alt=""></div>
+    <div class="sub">Hébergement et nom de domaine inclus.</div>
+  </div>
+
+  <!-- S8 you play -->
+  <div id="s8" class="scene clip" data-start="13.6" data-duration="1.9" data-track-index="8">
+    <div class="full"></div>
+    <div style="position:absolute;left:0;right:0;top:640px;text-align:center">
+      <div class="line"><span style="color:#fff;font-size:190px">Tu joues.</span></div>
+      <div class="line" style="margin-top:20px"><span style="color:#081236;font-size:104px">On s'occupe</span></div>
+      <div class="line"><span style="color:#081236;font-size:104px">du reste.</span></div>
+    </div>
+  </div>
+
+  <!-- S9 CTA -->
+  <div id="s9" class="scene clip" data-start="15.5" data-duration="1.4" data-track-index="9">
+    <div class="full"></div>
+    <img id="kubo" src="assets/kubo-coucou.png" style="position:absolute;left:330px;top:560px;width:420px" alt="">
+    <div style="position:absolute;left:0;right:0;top:1150px;text-align:center"><div class="line"><span style="color:#fff;font-size:92px">Parle-nous</span></div><div class="line"><span style="color:#081236;font-size:92px">de ton club</span></div></div>
+    <div id="cta" style="position:absolute;left:250px;top:1420px;width:580px;height:110px;border-radius:999px;background:#fff;color:#1353F4;display:grid;place-items:center;font:800 38px/1 M;box-shadow:0 30px 60px -18px rgba(8,18,54,.5)">Parler de mon club</div>
+    <div style="position:absolute;left:0;right:0;top:1570px;text-align:center;font:700 30px/1 M;letter-spacing:.2em;color:rgba(255,255,255,.85)">KLUBIK.PRO</div>
+  </div>
+
+  <!-- S10 end -->
+  <div id="s10" class="scene clip" data-start="16.9" data-duration="2.1" data-track-index="10" style="background:#000">
+    <img id="endlogo" src="assets/logo-officiel.png" style="position:absolute;left:240px;top:880px;width:600px;opacity:0" alt="">
+  </div>
+
+  <div id="glitch" class="clip" data-start="0" data-duration="19" data-track-index="11" style="position:absolute;inset:0;pointer-events:none">
+    <div class="gl" style="left:-40px;top:420px;width:520px;background:#081236"></div>
+    <div class="gl" style="left:520px;top:690px;width:600px;background:#5CC8FF"></div>
+    <div class="gl" style="left:80px;top:980px;width:700px;background:#1353F4"></div>
+    <div class="gl" style="left:400px;top:1260px;width:500px;background:#081236"></div>
+    <div class="gl" style="left:-20px;top:1500px;width:860px;background:#5CC8FF"></div>
+  </div>
+  <div id="flash" class="clip" data-start="0" data-duration="19" data-track-index="12"></div>
+  <div id="noise" class="clip" data-start="0" data-duration="19" data-track-index="13" style="position:absolute;inset:0;background:url(assets/noise.png);mix-blend-mode:overlay;opacity:.06"></div>
+</div>
+
+<script>
+window.__timelines = window.__timelines || {};
+var tl = gsap.timeline({ paused: true });
+var E = "expo.out";
+function lines(sel, t, st) { tl.fromTo(sel + " .line>span", { yPercent: 115 }, { yPercent: 0, duration: .5, ease: E, stagger: st || .14 }, t); }
+function sub(sel, t) { tl.fromTo(sel + " .sub", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: .25, ease: E }, t); }
+function push(sel, t, d) { tl.fromTo(sel, { scale: 1 }, { scale: 1.045, duration: d, ease: "none", immediateRender: false }, t); }
+function glitch(t) {
+  var bars = document.querySelectorAll("#glitch .gl");
+  for (var i = 0; i < bars.length; i++) {
+    var dir = i % 2 ? -1 : 1;
+    tl.fromTo(bars[i], { opacity: 1, x: dir * 900, scaleY: 1 }, { x: -dir * 900, duration: .3, ease: "power2.inOut", immediateRender: false }, t + i * .02);
+    tl.to(bars[i], { opacity: 0, duration: .01 }, t + .32 + i * .02);
+  }
+}
+function flash(t) { tl.fromTo("#flash", { opacity: .8 }, { opacity: 0, duration: .2, ease: "power2.out", immediateRender: false }, t); }
+
+// S1
+lines("#s1", .08, .3); sub("#s1", .3); push("#s1", 0, 2.5);
+tl.fromTo("#w1", { y: 300, rotateX: 25, opacity: 0 }, { y: 0, rotateX: 0, opacity: 1, duration: .7, ease: E }, .2);
+tl.to("#w1", { x: 12, duration: .05, yoyo: true, repeat: 5 }, 1.9);
+glitch(2.3);
+
+// S2 : the visit counter falls to zero
+lines("#s2", 2.52, .22); sub("#s2", 2.6); push("#s2", 2.5, 2.3);
+tl.fromTo("#w2", { y: 260, opacity: 0 }, { y: 0, opacity: 1, duration: .55, ease: E }, 2.55);
+var o = { v: 132 };
+tl.to(o, { v: 0, duration: 1.1, ease: "power2.in", onUpdate: function () { document.getElementById("vis").textContent = Math.round(o.v); } }, 3.2);
+tl.fromTo("#vis", { scale: 1 }, { scale: 1.35, duration: .15, yoyo: true, repeat: 1, immediateRender: false }, 4.3);
+glitch(4.6);
+
+// S3 : Klubik appears
+tl.fromTo("#b3", { scale: .4, opacity: 0, filter: "blur(30px)" }, { scale: 1, opacity: 1, filter: "blur(0px)", duration: .4, ease: "back.out(1.8)" }, 4.85);
+tl.to("#b3", { scale: 1.12, duration: .5, ease: "none" }, 5.25);
+flash(5.8);
+
+// S4 : the bespoke site, on a real desk
+lines("#s4", 5.82, .14); sub("#s4", 5.95);
+tl.fromTo("#lap", { y: 500, rotate: 4, opacity: 0 }, { y: 0, rotate: 0, opacity: 1, duration: .6, ease: E }, 5.85);
+tl.fromTo("#lap img", { scale: 1.0 }, { scale: 1.12, duration: 2.0, ease: "none", transformOrigin: "50% 45%" }, 6.1);
+tl.to("#s4", { y: -140, filter: "blur(16px)", opacity: 0, duration: .22, ease: "power3.in" }, 7.88);
+
+// S5 : online registration and the notification
+lines("#s5", 8.12, .14); sub("#s5", 8.2);
+tl.fromTo("#phone", { y: 700, rotateY: -35, rotateZ: 6 }, { y: 0, rotateY: 0, rotateZ: 0, duration: .6, ease: E }, 8.12);
+tl.to("#val", { scale: .94, duration: .08, yoyo: true, repeat: 1 }, 8.85);
+tl.fromTo("#notif", { y: -140, opacity: 0 }, { y: 0, opacity: 1, duration: .4, ease: "back.out(1.6)" }, 8.95);
+tl.to("#s5", { x: -1080, duration: .25, ease: "power3.in" }, 9.65);
+
+// S6 : the club shop, add to cart
+lines("#s6", 9.92, .12); sub("#s6", 9.95);
+tl.fromTo("#mac", { x: 1080 }, { x: 0, duration: .35, ease: E }, 9.9);
+tl.fromTo("#cur", { x: 300, y: 300, opacity: 0 }, { x: 0, y: 0, opacity: 1, duration: .4, ease: "power3.out" }, 10.15);
+tl.to("#cur", { scale: .8, duration: .07, yoyo: true, repeat: 1 }, 10.6);
+tl.fromTo("#badge", { scale: 0, opacity: 1 }, { scale: 1, opacity: 1, duration: .35, ease: "back.out(3)", immediateRender: false }, 10.7);
+tl.to("#s6", { y: -140, filter: "blur(16px)", opacity: 0, duration: .2, ease: "power3.in" }, 11.1);
+
+// S7 : included, and the address typed live
+tl.fromTo("#p1", { scale: 0, opacity: 0 }, { scale: 1, opacity: 1, duration: .38, ease: "back.out(2)" }, 11.35);
+tl.fromTo("#p2", { scale: 0, opacity: 0 }, { scale: 1, opacity: 1, duration: .38, ease: "back.out(2)" }, 11.7);
+tl.fromTo("#ub", { y: 120, opacity: 0 }, { y: 0, opacity: 1, duration: .4, ease: E }, 11.45);
+var word = "tonclub.fr", ty = { n: 0 };
+tl.to(ty, { n: word.length, duration: .9, ease: "none", onUpdate: function () { document.getElementById("typed").textContent = word.slice(0, Math.floor(ty.n)); } }, 12.0);
+tl.to("#caret", { opacity: 0, duration: .01, repeat: 9, yoyo: true, repeatDelay: .12 }, 11.5);
+tl.fromTo("#live", { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .3, ease: E }, 12.95);
+tl.fromTo("#site", { y: 160, scale: .9, opacity: 0 }, { y: 0, scale: 1, opacity: 1, duration: .45, ease: E }, 12.95);
+sub("#s7", 11.4); push("#s7", 11.3, 2.3);
+glitch(13.4);
+
+// S8 : you play, we handle the rest
+tl.fromTo("#s8 .line>span", { yPercent: 115 }, { yPercent: 0, duration: .45, ease: E, stagger: .22 }, 13.62);
+push("#s8", 13.6, 1.9);
+flash(15.5);
+
+// S9 : call to action
+tl.fromTo("#kubo", { y: 600, rotate: -10 }, { y: 0, rotate: 0, duration: .55, ease: "back.out(1.5)" }, 15.52);
+tl.fromTo("#s9 .line>span", { yPercent: 115 }, { yPercent: 0, duration: .45, ease: E, stagger: .12 }, 15.6);
+tl.fromTo("#cta", { scale: 0 }, { scale: 1, duration: .4, ease: "back.out(2)" }, 15.85);
+tl.to("#cta", { scale: 1.06, duration: .2, yoyo: true, repeat: 1 }, 16.35);
+
+// S10 : end card
+tl.to("#endlogo", { opacity: 1, duration: .4 }, 17.0);
+tl.to("#endlogo", { opacity: 0, duration: .4 }, 18.5);
+
+var nz = document.getElementById("noise");
+tl.to({}, { duration: 19, ease: "none", onUpdate: function () { var f = Math.floor(tl.time() * 15); nz.style.backgroundPosition = ((f * 137) % 512) + "px " + ((f * 271) % 512) + "px"; } }, 0);
+window.__timelines["main"] = tl;
+</script>
+</body>
+</html>
